@@ -88,6 +88,9 @@ export default class GiftedAvatar extends React.Component {
 
     if (!this.avatarColor) {
       this.setAvatarColor();
+      if (this.props.user.color) {
+        this.avatarColor = this.props.user.color
+      }
     }
 
     return (
