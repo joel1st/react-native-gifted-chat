@@ -34,7 +34,7 @@ export default class Avatar extends React.Component {
       : this.props.nextMessage;
     const computedStyle = renderAvatarOnTop ? 'onTop' : 'onBottom';
 
-    if (this.props.renderAvatar === null) {
+    if (this.props.renderAvatar === false) {
       return null;
     }
 
